@@ -12,7 +12,7 @@ public:
 
 	InputParserResponse(EInputParserResponseType responseType);
 
-	~InputParserResponse();
+	virtual ~InputParserResponse();
 
 	EInputParserResponseType GetResponseType() const;
 

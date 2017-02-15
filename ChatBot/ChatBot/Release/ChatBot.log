@@ -1,15 +1,1 @@
-﻿  stdafx.cpp
-  IOHandler.cpp
-  main.cpp
-  ChatBotApp.cpp
-ChatBotApp.cpp(91): warning C4018: '>': signed/unsigned mismatch
-  InputParser.cpp
-  InputParserResponse.cpp
-  InputParserResponseAdd.cpp
-  InputParserResponseFind.cpp
-  ProductsFetcher.cpp
-  Generating code
-  All 2462 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  ChatBot.vcxproj -> C:\Users\Ori\documents\visual studio 2015\Projects\ChatBot\Release\ChatBot.exe
-  ChatBot.vcxproj -> C:\Users\Ori\documents\visual studio 2015\Projects\ChatBot\Release\ChatBot.pdb (Full PDB)
+﻿
