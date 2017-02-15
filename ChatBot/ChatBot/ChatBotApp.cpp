@@ -67,6 +67,7 @@ void ChatBotApp::Start()
 
 		if (_res != nullptr) {
 			delete(_res); //free only allocated memory
+			_res = nullptr;
 		}
 	} while (input.CompareNoCase(ChatBotCommon::EXIT_COMMAND) != 0);
 }
