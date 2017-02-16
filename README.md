@@ -19,3 +19,5 @@
  4.2. Code cleaning - changed ChatBotApp loop flow order
  
  4.3. Code cleaning - added missing const to parameters
+# TODO:
+1. Add testing files to solution
