@@ -22,3 +22,5 @@
 
 # TODO:
 1. Add testing files to solution
+
+2. Clean and enhance ProductsFetcher
