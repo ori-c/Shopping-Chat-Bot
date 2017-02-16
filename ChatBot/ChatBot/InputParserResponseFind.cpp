@@ -3,7 +3,7 @@
 
 using namespace ChatBotCommon;
 
-InputParserResponseFind::InputParserResponseFind(CString& productName)
+InputParserResponseFind::InputParserResponseFind(const CString& productName)
 	:InputParserResponse(EInputParserResponseType::FIND_PRODUCT), _productName(productName)
 {
 }

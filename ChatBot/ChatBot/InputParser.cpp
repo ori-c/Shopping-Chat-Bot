@@ -14,7 +14,7 @@ InputParser::~InputParser()
 {
 }
 
-BOOL InputParser::ParseInputString(CString & inputStr, InputParserResponse *& outputRes) const
+BOOL InputParser::ParseInputString(const CString & inputStr, InputParserResponse *& outputRes) const
 {
 	vector<CString> tokenizedInput;
 	TokenizeString(inputStr, tokenizedInput);
@@ -34,7 +34,7 @@ BOOL InputParser::ParseInputString(CString & inputStr, InputParserResponse *& ou
 	return FALSE;
 }
 
-void InputParser::TokenizeString(CString& inputStr, vector<CString>& outputVec, CString seperator) const
+void InputParser::TokenizeString(const CString& inputStr, vector<CString>& outputVec, const CString seperator) const
 {
 	int position = 0;
 	CString token = inputStr.Tokenize(seperator, position);
@@ -44,7 +44,7 @@ void InputParser::TokenizeString(CString& inputStr, vector<CString>& outputVec, 
 	}
 }
 
-BOOL InputParser::CompareInputTokens(vector<CString>& tokenizedInput, vector<CString>& comparePhrase, EInputParserResponseType responseType, InputParserResponse *& outputRes) const
+BOOL InputParser::CompareInputTokens(const vector<CString>& tokenizedInput, const vector<CString>& comparePhrase, const EInputParserResponseType responseType, InputParserResponse *& outputRes) const
 {
 	if (tokenizedInput.size() != comparePhrase.size()) {
 		return FALSE;

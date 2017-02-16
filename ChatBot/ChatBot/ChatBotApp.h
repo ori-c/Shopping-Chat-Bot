@@ -22,7 +22,7 @@ public:
 	void Start();
 
 private:
-	void ParseItemList(vector<CString> & listToParse, CString& outputString, CString seperator = L", ") const;
+	void ParseItemList(const vector<CString> & listToParse, CString& outputString, const CString seperator = L", ") const;
 	BOOL AddProductToShoppingList();
 
 	//members:
@@ -30,7 +30,7 @@ private:
 
 	//helper classes:
 	const InputParser _parser;
-	ProductsFetcher _productsFetcher;
+	const ProductsFetcher _productsFetcher;
 	const IOHandler _ioHandler;
 
 	//data structures:

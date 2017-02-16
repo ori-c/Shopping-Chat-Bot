@@ -23,7 +23,7 @@ public:
 	ProductsFetcher();
 	~ProductsFetcher();
 
-	BOOL QueryProduct(CString& productToQuery, std::vector<CString> & outputProducts) const;
+	BOOL QueryProduct(const CString& productToQuery, std::vector<CString> & outputProducts) const;
 
 	//members:
 

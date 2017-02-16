@@ -18,11 +18,11 @@ public:
 	InputParser();
 	~InputParser();
 
-	BOOL ParseInputString(CString & inputStr, InputParserResponse *& outputRes) const;
+	BOOL ParseInputString(const CString & inputStr, InputParserResponse *& outputRes) const;
 
 private:
-	void TokenizeString(CString& inputStr, vector<CString>& outputVec, CString seperator = L" ") const;
-	BOOL CompareInputTokens(vector<CString>& tokenizedInput, vector<CString>& comparePhrase, EInputParserResponseType responseType, InputParserResponse *& outputRes) const;
+	void TokenizeString(const CString& inputStr, vector<CString>& outputVec, const CString seperator = L" ") const;
+	BOOL CompareInputTokens(const vector<CString>& tokenizedInput, const vector<CString>& comparePhrase, const EInputParserResponseType responseType, InputParserResponse *& outputRes) const;
 
 	//members:
 private:

@@ -11,7 +11,7 @@ ProductsFetcher::~ProductsFetcher()
 {
 }
 
-BOOL ProductsFetcher::QueryProduct(CString & productToQuery, std::vector<CString> & outputProducts) const
+BOOL ProductsFetcher::QueryProduct(const CString & productToQuery, std::vector<CString> & outputProducts) const
 {
 	// Create http_client to send the request.
 	http_client client(U("https://platform.shopyourway.com/"));

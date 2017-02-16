@@ -10,7 +10,7 @@ class InputParserResponseFind :
 {
 	//methods:
 public:
-	InputParserResponseFind(CString& productName);
+	InputParserResponseFind(const CString& productName);
 	~InputParserResponseFind();
 
 	CString GetResponseValue() const;
